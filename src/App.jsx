@@ -1,16 +1,11 @@
+import { MobileContainer } from "./components/MobileContainer";
+import { DesktopContainer } from "./components/DesktopContainer";
 
-import './App.css'
-
-function App() {
-
-  return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Terceiro Desafio: Formulário de Cadastro de Membros</p>
-      </main>
-    </>
+export const App = () => {
+  return(
+    <main className="w-screen h-full lg:h-screen bg-[url(/assets/images/background-image.png)] bg-no-repeat lg:bg-none py-22 lg:bg-darkblue flex flex-col items-center">
+      <MobileContainer />
+      <DesktopContainer />
+    </main>
   );
 }
-
-export default App
